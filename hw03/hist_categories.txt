@@ -1,0 +1,16 @@
+   4170 Music
+   3099 Video DVD
+   2115 Books
+    566 Video
+     11 Digital_Video_Download
+     11 Camera
+      7 Digital_Music_Purchase
+      6 Digital_Ebook_Purchase
+      3 Toys
+      3 Office Products
+      3 Home
+      2 Baby
+      1 Watches
+      1 Video Games
+      1 Musical Instruments
+      1 Electronics

@@ -1,0 +1,343 @@
+Script started on 2025-09-09 14:47:15-04:00
+bash-4.4$ unzip ama[K[K[K[K[K[K[K[K[Kpwd
+/mnt/scratch/CS131_jelenag/students/ethant/hw03
+bash-4.4$ cd /mnt/scc[Kratch//[Kje[K[Kc[KCS131_jelenag/
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ ls
+-			       amazon_reviews_multilingual_US_v1_00_10K.tsv  col_title.txt  F25_CS131_jelenag_namesE2.txt  hw	      p		      projects		run_test.sh    top20_asc.txt	 typescript
+access.log		       amazon_reviews_multilingual_US_v1_00.tsv      counts.txt     F25_CS131_jelenag_namesE3.txt  hw1	      pid_first.txt   project-team1111	students       top20_desc.txt
+amazon_reviews_10k_random.tsv  amazon_reviews_multilingual_US_v1_00.tsv.zip  errors2.txt    F25_CS131_jelenag_namesE.txt   hw2.log    pid_rating.tsv  raw.txt		students2.txt  top20_rand.txt
+amazon_reviews_50.tsv	       change_project_dir_permissions.sh	     errors.txt     file2.txt			   link1.txt  pid_second.txt  results_tee.txt	students.txt   top_products.txt
+amazon_reviews_60.tsv	       col_pid.txt				     extract.err    first2students.log		   out.txt    pid_title.tsv   results.txt	title_pid.tsv  top_ratings.txt
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ hae[K[Kead[K[K[K[K) [Khead -n[K[K[K[K[K[K[K[K(head -1[Kn 1 amazon_reviews_multilingual_US_v1_00.tsv && tail -n +2 amazon_reviews_multilingual_US_v1_00.tsv | shuf -n 10000) > /mnt/scratch/CS131_jelenag/studentse[K/ethant//[Khw03/amazon_reviews_10k_random.tsv
+bash-4.4$ pwd
+/mnt/scratch/CS131_jelenag
+bash-4.4$ cd /st[K[Kmnt/scratch/c[KCS131_jelenag/students/ethant/hw03
+bash-4.4$ ls
+amazon_reviews_10k_random.tsv  hw03_session.txt
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ wc -w[K[K[K -l amazon_reviews_10k_random.tsv 
+10001 amazon_reviews_10k_random.tsv
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ tail -n _2[K[K+2 amazon_reviews_10k_random.tsv  |wc -l[1@ 
+10000
+bash-4.4$ 
+bash-4.4$ echo[K[K[K[K{ echo "The first line is the header" 
+> 
+> 
+> { echo "The first line is the header" ; [C[Ctail -n +2 amazon_reviews_10k_random.tsv  | wc -l[C[C[9P{ echo "The first line is the header" ; [C[C[Kecho -n "Total lies (includeing header[K[K[K[K[K[K[K[K[K[K[King header): "
+> wc o[K-l < amazon_reviews_10k_random.tsv 
+> echo -n "Total data lines (excluding header): "
+> tail -n _[K+2 amazon_reviews_10k_random.tsv | wc -l
+> } > counts.txt
+bash-4.4$ ls
+amazon_reviews_10k_random.tsv  counts.txt  hw03_session.txt
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ cat[K[K[Kcat ounts.t[K[K[K[K[K[K[Kcounts.txt 
+The first line is the header
+Total lies (including header): 10001
+Total data lines (excluding header): 10000
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ tail -n +2 amazon_reviews_10k_random.tsv  |[K\ |curt[K[Kt[K[K[K[K| cut -f8 |[K\ | sort \ | uniq -c |[K\ | sort -nr \ > hist)[K_star_rating.txt
+cut: ' ': No such file or directory
+uniq: ' ': No such file or directory
+sort: cannot read: ' ': No such file or directory
+sort: cannot read: ' ': No such file or directory
+bash-4.4$ tail -n +2 amazon_reviews_10k_random.tsv  \ | cut -f8 \ | sort \ | uniq -c \ | sort -nr \ > hist_star_rating.txt[C[C[C[C[1P[1P[1P[1P[C[C[1P[1P[1P
+bash-4.4$ cat i[Khist_star_rating.txt 
+   6242 5
+   1793 4
+    823 3
+    647 1
+    495 2
+bash-4.4$ pwd
+/mnt/scratch/CS131_jelenag/students/ethant/hw03
+bash-4.4$ ls
+amazon_reviews_10k_random.tsv  counts.txt  hist_star_rating.txt  hw03_session.txt
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ tail -n +2 amazon_reviews_10k_random.tsv | cut -f2 | sort } uniq-[K -c | sort -nr | head -10 > top+[K_customere.txt
+sort: extra operand 'uniq' not allowed with -c
+bash-4.4$ tail -n +2 amazon_reviews_10k_random.tsv | cut -f2 | sort } uniq -c | sort -nr | head -10 > top_customere.txt[1P[C[1P[C[1@ [1@|
+bash-4.4$ cat top_customere.txt 
+      8 20018062
+      7 50913245
+      7 37166361
+      6 52932081
+      6 52042479
+      6 50370127
+      6 49128980
+      6 45838740
+      5 53082946
+      5 52569116
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ tail -n +2 amazon_reviews_10k_random.tsv | c[Ksort | uniq -c | sort -nr } head -10 | awk > top_customere.txt [K[K[K[K[K[K[K[K[K[K[K[K[K[Kproducts.e[Ktxt
+sort: invalid option -- '1'
+Try 'sort --help' for more information.
+Usage: awk [POSIX or GNU style options] -f progfile [--] file ...
+Usage: awk [POSIX or GNU style options] [--] 'program' file ...
+POSIX options:		GNU long options: (standard)
+	-f progfile		--file=progfile
+	-F fs			--field-separator=fs
+	-v var=val		--assign=var=val
+Short options:		GNU long options: (extensions)
+	-b			--characters-as-bytes
+	-c			--traditional
+	-C			--copyright
+	-d[file]		--dump-variables[=file]
+	-D[file]		--debug[=file]
+	-e 'program-text'	--source='program-text'
+	-E file			--exec=file
+	-g			--gen-pot
+	-h			--help
+	-i includefile		--include=includefile
+	-l library		--load=library
+	-L[fatal|invalid]	--lint[=fatal|invalid]
+	-M			--bignum
+	-N			--use-lc-numeric
+	-n			--non-decimal-data
+	-o[file]		--pretty-print[=file]
+	-O			--optimize
+	-p[file]		--profile[=file]
+	-P			--posix
+	-r			--re-interval
+	-s			--no-optimize
+	-S			--sandbox
+	-t			--lint-old
+	-V			--version
+
+To report bugs, see node `Bugs' in `gawk.info'
+which is section `Reporting Problems and Bugs' in the
+printed version.  This same information may be found at
+https://www.gnu.org/software/gawk/manual/html_node/Bugs.html.
+PLEASE do NOT try to report bugs by posting in comp.lang.awk.
+
+gawk is a pattern scanning and processing language.
+By default it reads standard input and writes standard output.
+
+Examples:
+	gawk '{ sum += $1 }; END { print sum }' file
+	gawk -F: '{ print $1 }' /etc/passwd
+bash-4.4$ c[Ktail -n +2 amazon_reviews_10k_random.tsv | sort | uniq -c | sort -nr } head -10 | awk > top_products.txt[1P[1@|
+Usage: awk [POSIX or GNU style options] -f progfile [--] file ...
+Usage: awk [POSIX or GNU style options] [--] 'program' file ...
+POSIX options:		GNU long options: (standard)
+	-f progfile		--file=progfile
+	-F fs			--field-separator=fs
+	-v var=val		--assign=var=val
+Short options:		GNU long options: (extensions)
+	-b			--characters-as-bytes
+	-c			--traditional
+	-C			--copyright
+	-d[file]		--dump-variables[=file]
+	-D[file]		--debug[=file]
+	-e 'program-text'	--source='program-text'
+	-E file			--exec=file
+	-g			--gen-pot
+	-h			--help
+	-i includefile		--include=includefile
+	-l library		--load=library
+	-L[fatal|invalid]	--lint[=fatal|invalid]
+	-M			--bignum
+	-N			--use-lc-numeric
+	-n			--non-decimal-data
+	-o[file]		--pretty-print[=file]
+	-O			--optimize
+	-p[file]		--profile[=file]
+	-P			--posix
+	-r			--re-interval
+	-s			--no-optimize
+	-S			--sandbox
+	-t			--lint-old
+	-V			--version
+
+To report bugs, see node `Bugs' in `gawk.info'
+which is section `Reporting Problems and Bugs' in the
+printed version.  This same information may be found at
+https://www.gnu.org/software/gawk/manual/html_node/Bugs.html.
+PLEASE do NOT try to report bugs by posting in comp.lang.awk.
+
+gawk is a pattern scanning and processing language.
+By default it reads standard input and writes standard output.
+
+Examples:
+	gawk '{ sum += $1 }; END { print sum }' file
+	gawk -F: '{ print $1 }' /etc/passwd
+bash-4.4$ cat top_products.txt 
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ cat top_products.txt [C[C[C[C[C[C[C[C[C[Ctail -n +2 amazon_reviews_10k_random.tsv | sort | uniq -c | sort -nr | head -10 | awk > top_products.txt[1@a[1@w[1@k[1@ [1@-[1@F[1@'[1@\[1@t[1@'[1@ [1@'[1@p[1@r[1@i[1@n[1@t[1@$[1@4[1@ [1@"[1@t[1P[1@\[1@t[1@"[1@ [1@$[1@6[1@}[1@'[1@{[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [1P[C[1@ [1@|[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [1@'[1@{[1@c[1@o[1@u[1@n[1@t[1@=[1@$[1@1[1@;[C[1@ [1@$[1@1[1@=[1@"[1@"[1@;[C[1@ [1@p[1@r[1@i[1@n[1@t[C[1@ [1@c[1@o[1@u[1@n[1@t[C[1@ [1@"[1@\[1@t[1@"[C[1@ [1@$[1@0[1@}[1@'
+bash-4.4$ cat top_products.txt 
+38	 B0000AQS0F Firefly: The Complete Series
+29	 0385504209 The Da Vinci Code
+27	 B0000DD7LB In The Zone
+27	 B00004XONN Kid A
+26	 B000089RVX Fallen
+26	 B00000K19E The Matrix
+25	 0446677450 Rich Dad, Poor Dad: What the Rich Teach Their Kids About Money--That the Poor and Middle Class Do Not!
+24	 0316666343 The Lovely Bones
+23	 B000002UJQ OK Computer
+23	 1594489505 A Thousand Splendid Suns
+bash-4.4$ ls
+amazon_reviews_10k_random.tsv  counts.txt  hist_star_rating.txt  hw03_session.txt  top_customere.txt  top_products.txt
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ tail -n +2 amazon_reviews_10k_random.tsv ||[K cur[Kt -f7 |s[K sort |uniq -c | n[Ksort nr > hist_star_rating.txt [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcategories.txt
+sort: cannot read: nr: No such file or directory
+bash-4.4$ tail -n +2 amazon_reviews_10k_random.tsv | cut -f7 | sort |uniq -c | sort nr > hist_categories.txt[1@ [1P[C[1@ 
+sort: cannot read: nr: No such file or directory
+bash-4.4$ tail -n +2 amazon_reviews_10k_random.tsv | cut -f7 | sort | uniq -c | sort nr > hist_categories.txt[1@-
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ cat hist_categories.txt 
+   4170 Music
+   3099 Video DVD
+   2115 Books
+    566 Video
+     11 Digital_Video_Download
+     11 Camera
+      7 Digital_Music_Purchase
+      6 Digital_Ebook_Purchase
+      3 Toys
+      3 Office Products
+      3 Home
+      2 Baby
+      1 Watches
+      1 Video Games
+      1 Musical Instruments
+      1 Electronics
+bash-4.4$ vi README.nc[K[Kmd
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;67r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[67;1H"README.md" [New File][2;1H[94m~                                                                                                                                                                                                                     [3;1H~                                                                                                                                                                                                                     [4;1H~                                                                                                                                                                                                                     [5;1H~                                                                                                                                                                                                                     [6;1H~                                                                                                                                                                                                                     [7;1H~                                                                                                                                                                                                                     [8;1H~                                                                                                                                                                                                                     [9;1H~                                                                                                                                                                                                                     [10;1H~                                                                                                                                                                                                                     [11;1H~                                                                                                                                                                                                                     [12;1H~                                                                                                                                                                                                                     [13;1H~                                                                                                                                                                                                                     [14;1H~                                                                                                                                                                                                                     [15;1H~                                                                                                                                                                                                                     [16;1H~                                                                                                                                                                                                                     [17;1H~                                                                                                                                                                                                                     [18;1H~                                                                                                                                                                                                                     [19;1H~                                                                                                                                                                                                                     [20;1H~                                                                                                                                                                                                                     [21;1H~                                                                                                                                                                                                                     [22;1H~                                                                                                                                                                                                                     [23;1H~                                                                                                                                                                                                                     [24;1H~                                                                                                                                                                                                                     [25;1H~                                                                                                                                                                                                                     [26;1H~                                                                                                                                                                                                                     [27;1H~                                                                                                                                                                                                                     [28;1H~                                                                                                                                                                                                                     [29;1H~                                                                                                                                                                                                                     [30;1H~                                                                                                                                                                                                                     [31;1H~                                                                                                                                                                                                                     [32;1H~                                                                                                                                                                                                                     [33;1H~                                                                                                                                                                                                                     [34;1H~                                                                                                                                                                                                                     [35;1H~                                                                                                                                                                                                                     [36;1H~                                                                                                                                                                                                                     [37;1H~                                                                                                                                                                                                                     [38;1H~                                                                                                                                                                                                                     [39;1H~                                                                                                                                                                                                                     [40;1H~                                                                                                                                                                                                                     [41;1H~                                                                                                                                                                                                                     [42;1H~                                                                                                                                                                                                                     [43;1H~                                                                                                                                                                                                                     [44;1H~                                                                                                                                                                                                                     [45;1H~                                                                                                                                                                                                                     [46;1H~                                                                                                                                                                                                                     [47;1H~                                                                                                                                                                                                                     [48;1H~                                                                                                                                                                                                                     [49;1H~                                                                                                                                                                                                                     [50;1H~                                                                                                                                                                                                                     [51;1H~                                                                                                                                                                                                                     [52;1H~                                                                                                                                                                                                                     [53;1H~                                                                                                                                                                                                                     [54;1H~                                                                                                                                                                                                                     [55;1H~                                                                                                                                                                                                                     [56;1H~                                                                                                                                                                                                                     [57;1H~                                                                                                                                                                                                                     [58;1H~                                                                                                                                                                                                                     [59;1H~                                                                                                                                                                                                                     [60;1H~                                                                                                                                                                                                                     [61;1H~                                                                                                                                                                                                                     [62;1H~                                                                                                                                                                                                                     [63;1H~                                                                                                                                                                                                                     [64;1H~                                                                                                                                                                                                                     [65;1H~                                                                                                                                                                                                                     [66;1H~                                                                                                                                                                                                                     [1;1H[?25h[?25l[m[67;1H[1m-- INSERT --[m[67;13H[K[1;1H[?25h[?25l [?25h[?25lu[?25h[?25ls[?25h[?25le[?25h[?25l[1;4H[K[1;4H[?25h[?25l[1;3H[K[1;3H[?25h[?25l[1;2H[K[1;2H[?25h[?25l[?25h[?25lI[?25h[?25l [?25h[?25lm[?25h[?25la[?25h[?25li[?25h[?25ln[?25h[?25ll[?25h[?25ly[?25h[?25l [?25h[?25lu[?25h[?25ls[?25h[?25le[?25h[?25ld[?25h[?25l [?25h[?25l [?25h[?25lc[?25h[?25l[1;16H[K[1;16H[?25h[?25l[?25h[?25lc[?25h[?25lu[?25h[?25lt[?25h[?25l,[?25h[?25l [?25h[?25ls[?25h[?25lo[?25h[?25lr[?25h[?25lt[?25h[?25l,[?25h[?25l [?25h[?25lu[?25h[?25ln[?25h[?25li[?25h[?25lq[?25h[?25lm[?25h[?25l [?25h[?25lh[?25h[?25le[?25h[?25la[?25h[?25ld[?25h[?25l [?25h[?25la[?25h[?25l[1;37H[K[1;37H[?25h[?25l[?25h[?25l[1;35H[K[1;35H[?25h[?25l[1;34H[K[1;34H[?25h[?25l[1;33H[K[1;33H[?25h[?25l[1;32H[K[1;32H[?25h[?25l[?25h[?25l[1;30H[K[1;30H[?25h[?25l,[?25h[?25l [?25h[?25lh[?25h[?25le[?25h[?25la[?25h[?25ld[?25h[?25l,[?25h[?25l [?25h[?25la[?25h[?25ln[?25h[?25ld[?25h[?25l [?25h[?25ls[?25h[?25lo[?25h[?25lm[?25h[?25le[?25h[?25lt[?25h[?25li[?25h[?25lm[?25h[?25le[?25h[?25ls[?25h[?25l [?25h[?25la[?25h[?25lw[?25h[?25lk[?25h[?25l.[?25h[?25l [?25h[?25lU[?25h[?25l[1;57H[K[1;57H[?25h[?25lI[?25h[?25l [?25h[?25lu[?25h[?25ls[?25h[?25le[?25h[?25ld[?25h[?25l [?25h[?25lc[?25h[?25lu[?25h[?25lt[?25h[?25l [?25h[?25lt[?25h[?25lo[?25h[?25l [?25h[?25lt[?25h[?25l[1;71H[K[1;71H[?25h[?25lc[?25h[?25lu[?25h[?25lt[?25h[?25l [?25h[?25lt[?25h[?25lh[?25h[?25le[?25h[?25l [?25h[?25lr[?25h[?25li[?25h[?25lg[?25h[?25lh[?25h[?25lt[?25h[?25l [?25h[?25lco[?25h[?25ll[?25h[?25lu[?25h[?25lm[?25h[?25ln[?25h[?25l [?25h[?25lo[?25h[?25lu[?25h[?25lt[?25h[?25l [?25h[?25lo[?25h[?25lf[?25h[?25l [?25h[?25lt[?25h[?25lh[?25h[?25le[?25h[?25l [?25h[?25l.[?25h[?25lt[?25h[?25ls[?25h[?25lv[?25h[?25l [?25h[?25lv[?25h[?25l[1;108H[K[1;108H[?25h[?25lf[?25h[?25li[?25h[?25ll[?25h[?25le[?25h[?25l.[?25h[?25l [?25h[?25lI[?25h[?25l [?25h[?25lu[?25h[?25ls[?25h[?25le[?25h[?25ld[?25h[?25l [?25h[?25lt[?25h[?25l[1;121H[K[1;121H[?25h[?25ls[?25h[?25lo[?25h[?25lr[?25h[?25lt[?25h[?25l [?25h[?25lt[?25h[?25lo[?25h[?25l [?25h[?25lg[?25h[?25lr[?25h[?25lo[?25h[?25lu[?25h[?25lp[?25h[?25l [?25h[?25lt[?25h[?25lh[?25h[?25le[?25h[?25l [?25h[?25li[?25h[?25ld[?25h[?25le[?25h[?25ln[?25h[?25lt[?25h[?25li[?25h[?25lc[?25h[?25la[?25h[?25ll[?25h[?25l [?25h[?25lI[?25h[?25lD[?25h[?25l'[?25h[?25ls[?25h[?25l [?25h[?25lt[?25h[?25lo[?25h[?25lg[?25h[?25le[?25h[?25lt[?25h[?25lh[?25h[?25le[?25h[?25lr[?25h[?25l,[?25h[?25l [?25h[?25la[?25h[?25ln[?25h[?25ld[?25h[?25l [?25h[?25ls[?25h[?25lo[?25h[?25lr[?25h[?25lt[?25h[?25l [?25h[?25l-[?25h[?25ln[?25h[?25lr[?25h[?25l [?25h[?25lt[?25h[?25lo[?25h[?25l [?25h[?25ls[?25h[?25lo[?25h[?25lr[?25h[?25l [?25h[?25lt[?25h[?25lh[?25h[?25le[?25h[?25l[1;186H[K[1;186H[?25h[?25l[1;185H[K[1;185H[?25h[?25l[1;184H[K[1;184H[?25h[?25l[?25h[?25lt[?25h[?25l [?25h[?25lt[?25h[?25lh[?25h[?25le[?25h[?25l [?25h[?25lc[?25h[?25lo[?25h[?25lu[?25h[?25ln[?25h[?25lt[?25h[?25l [?25h[?25lf[?25h[?25l[1;195H[K[1;195H[?25h[?25lr[?25h[?25lo[?25h[?25lm[?25h[?25l [?25h[?25l[?25h[?25l[1;197H[K[1;197H[?25h[?25l[1;196H[K[1;196H[?25h[?25l[1;195H[K[1;195H[?25h[?25lf[?25h[?25lr[?25h[?25lo[?25h[?25lm[?25h[?25l [?25h[?25ll[?25h[?25la[?25h[?25lr[?25h[?25lg[?25h[?25le[?25h[?25lt[?25h[?25ls[?25h[?25l[1;206H[K[1;206H[?25h[?25l[1;205H[K[1;205H[?25h[?25ls[?25h[?25lt[?25h[?25l [?25h[?25lt[?25h[?25lo[?25h[?25l [?25h[?25ls[?25h[?25lm[?25h[?25la[?25h[?25ll[2;1H[?25h[?25ll[2;2H[K[2;2H[?25h[?25le[?25h[?25ls[?25h[?25lt[?25h[?25l.[?25h[?25l [?25h[?25lI[?25h[?25l [?25h[?25lu[?25h[?25ls[?25h[?25le[?25h[?25ld[?25h[?25l [?25h[?25lh[?25h[?25le[?25h[?25la[?25h[?25ld[?25h[?25l [?25h[?25lt[?25h[?25lo[?25h[?25l [?25h[?25le[?25h[?25le[?25h[?25l[2;23H[K[2;23H[?25h[?25l[2;22H[K[2;22H[?25h[?25lk[?25h[?25le[?25h[?25le[?25h[?25lp[?25h[?25l [?25h[?25lx[?25h[?25l [?25h[?25la[?25h[?25lm[?25h[?25lo[?25h[?25lu[?25h[?25ln[?25h[?25lt[?25h[?25l [?25h[?25lo[?25h[?25lf[?25h[?25l [?25h[?25lc[?25h[?25lu[?25h[?25l=[?25h[?25l[2;41H[K[2;41H[?25h[?25l[2;40H[K[2;40H[?25h[?25l[2;39H[K[2;39H[?25h[?25lc[?25h[?25lu[?25h[?25ls[?25h[?25lot[?25h[?25lm[?25h[?25le[?25h[?25lr[?25h[?25ls[?25h[?25l[2;47H[K[2;47H[?25h[?25l[2;46H[K[2;46H[?25h[?25l[2;45H[K[2;45H[?25h[?25l[2;44H[K[2;44H[?25h[?25l[2;43H[K[2;43H[?25h[?25l[2;42H[K[2;42H[?25h[?25lt[?25h[?25lo[?25h[?25lm[?25h[?25le[?25h[?25lr[?25h[?25ls[?25h[?25l.[?25h[?25l [?25h[?25lI[?25h[?25l[2;50H[K[2;50H[?25h[?25lI[?25h[?25l [?25h[?25lu[?25h[?25ls[?25h[?25le[?25h[?25ld[?25h[?25l [?25h[?25lu[?25h[?25ln[?25h[?25li[?25h[?25lq[?25h[?25l [?25h[?25lt[?25h[?25lo[?25h[?25l [?25h[?25lc[?25h[?25lo[?25h[?25lu[?25h[?25ln[?25h[?25lt[?25h[?25l [?25h[?25lh[?25h[?25lo[?25h[?25lw[?25h[?25l [?25h[?25lm[?25h[?25la[?25h[?25ln[?25h[?25ly[?25h[?25l [?25h[?25lt[?25h[?25li[?25h[?25lm[?25h[?25le[?25h[?25ls[?25h[?25l [?25h[?25la[?25h[?25l [?25h[?25lu[?25h[?25ln[?25h[?25li[?25h[?25lq[?25h[?25lu[?25h[?25le[?25h[?25l [?25h[?25li[?25h[?25lt[?25h[?25le[?25h[?25lm[?25h[?25l [?25h[?25la[?25h[?25lp[?25h[?25lp[?25h[?25le[?25h[?25la[?25h[?25lr[?25h[?25le[?25h[?25ld[?25h[?25l.[?25h[?25l [?25h[?25lI[?25h[?25l [?25h[?25lu[?25h[?25ls[?25h[?25le[?25h[?25ld[?25h[?25l [?25h[?25la[?25h[?25lw[?25h[?25lk[?25h[?25l [?25h[?25lt[?25h[?25lo[?25h[?25l [?25h[?25le[?25h[?25lx[?25h[?25lt[?25h[?25lr[?25h[?25la[?25h[?25lc[?25h[?25lt[?25h[?25l [?25h[?25lp[?25h[?25lr[?25h[?25lo[?25h[?25ld[?25h[?25lu[?25h[?25lc[?25h[?25lt[?25h[?25l [?25h[?25li[?25h[?25ld[?25h[?25ls[?25h[?25l[2;142H[K[2;142H[?25h[?25l;[?25h[?25ls[?25h[?25l[2;143H[K[2;143H[?25h[?25l[2;142H[K[2;142H[?25h[?25l'[?25h[?25ls[?25h[?25l [?25h[?25la[?25h[?25ln[?25h[?25ld[?25h[?25l [?25h[?25lp[?25h[?25lr[?25h[?25lo[?25h[?25ld[?25h[?25lu[?25h[?25lc[?25h[?25l t[?25h[?25lt[?25h[?25li[?25h[?25ll[?25h[?25l[2;159H[K[2;159H[?25h[?25lt[?25h[?25ll[?25h[?25l[2;160H[K[2;160H[?25h[?25l[2;159H[K[2;159H[?25h[?25l[2;158H[K[2;158H[?25h[?25l[2;157H[K[2;157H[?25h[?25li[?25h[?25lt[?25h[?25ll[?25h[?25le[?25h[?25ls[?25h[?25l.[?25h[?25l:[?25h[?25l\[?25h[?25l[2;164H[K[2;164H[?25h[?25l[2;163H[K[2;163H[?25h[?25l`[?25h[?25l[2;163H[K[2;163H[?25h[67;1H[K[2;162H[?25l[?25h[?25l[67;1H:[?2004h[?25hwq[?25l[?2004l"README.md" [New] 1L, 377C written
+[?2004l[?1l>[?25h[?1049l[23;0;0tbash-4.4$ 
+bash-4.4$ 
+bash-4.4$ vi -R re[K[KREADME.md 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;67r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[67;1H"README.md" [readonly] 1L, 377C[1;1HI mainly used cut, sort, uniq, head, and sometimes awk. I used cut to cut the right column out of the .tsv file. I used sort to group the identical ID's together, and sort -nr to sort the count from largest to small[2;1Hlest. I used head to keep x amount of customers. I used uniq to count how many times a unique item appeared. I used awk to extract product id's and produc titles.
+[94m~                                                                                                                                                                                                                     [4;1H~                                                                                                                                                                                                                     [5;1H~                                                                                                                                                                                                                     [6;1H~                                                                                                                                                                                                                     [7;1H~                                                                                                                                                                                                                     [8;1H~                                                                                                                                                                                                                     [9;1H~                                                                                                                                                                                                                     [10;1H~                                                                                                                                                                                                                     [11;1H~                                                                                                                                                                                                                     [12;1H~                                                                                                                                                                                                                     [13;1H~                                                                                                                                                                                                                     [14;1H~                                                                                                                                                                                                                     [15;1H~                                                                                                                                                                                                                     [16;1H~                                                                                                                                                                                                                     [17;1H~                                                                                                                                                                                                                     [18;1H~                                                                                                                                                                                                                     [19;1H~                                                                                                                                                                                                                     [20;1H~                                                                                                                                                                                                                     [21;1H~                                                                                                                                                                                                                     [22;1H~                                                                                                                                                                                                                     [23;1H~                                                                                                                                                                                                                     [24;1H~                                                                                                                                                                                                                     [25;1H~                                                                                                                                                                                                                     [26;1H~                                                                                                                                                                                                                     [27;1H~                                                                                                                                                                                                                     [28;1H~                                                                                                                                                                                                                     [29;1H~                                                                                                                                                                                                                     [30;1H~                                                                                                                                                                                                                     [31;1H~                                                                                                                                                                                                                     [32;1H~                                                                                                                                                                                                                     [33;1H~                                                                                                                                                                                                                     [34;1H~                                                                                                                                                                                                                     [35;1H~                                                                                                                                                                                                                     [36;1H~                                                                                                                                                                                                                     [37;1H~                                                                                                                                                                                                                     [38;1H~                                                                                                                                                                                                                     [39;1H~                                                                                                                                                                                                                     [40;1H~                                                                                                                                                                                                                     [41;1H~                                                                                                                                                                                                                     [42;1H~                                                                                                                                                                                                                     [43;1H~                                                                                                                                                                                                                     [44;1H~                                                                                                                                                                                                                     [45;1H~                                                                                                                                                                                                                     [46;1H~                                                                                                                                                                                                                     [47;1H~                                                                                                                                                                                                                     [48;1H~                                                                                                                                                                                                                     [49;1H~                                                                                                                                                                                                                     [50;1H~                                                                                                                                                                                                                     [51;1H~                                                                                                                                                                                                                     [52;1H~                                                                                                                                                                                                                     [53;1H~                                                                                                                                                                                                                     [54;1H~                                                                                                                                                                                                                     [55;1H~                                                                                                                                                                                                                     [56;1H~                                                                                                                                                                                                                     [57;1H~                                                                                                                                                                                                                     [58;1H~                                                                                                                                                                                                                     [59;1H~                                                                                                                                                                                                                     [60;1H~                                                                                                                                                                                                                     [61;1H~                                                                                                                                                                                                                     [62;1H~                                                                                                                                                                                                                     [63;1H~                                                                                                                                                                                                                     [64;1H~                                                                                                                                                                                                                     [65;1H~                                                                                                                                                                                                                     [66;1H~                                                                                                                                                                                                                     [1;1H[?25h[?25l[m[67;1H[K[67;1H:[?2004h[?25hwq[?25l[97m[41mE45: 'readonly' option is set (add ! to override)[?2004h[1;1H[?25h[?25l[m[67;1H[K[67;1H:[?2004h[?25hq![?25l[?2004l[67;1H[K[67;1H[?2004l[?1l>[?25h[?1049l[23;0;0tbash-4.4$ 
+bash-4.4$ 
+bash-4.4$ ls
+amazon_reviews_10k_random.tsv  counts.txt  hist_categories.txt	hist_star_rating.txt  hw03_session.txt	README.md  top_customere.txt  top_products.txt
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ cs[Kd~[K ~
+bash-4.4$ git clone git@github.com:<[Kethantr324/ethan_tran_HW_repo/hw03
+fatal: destination path 'hw03' already exists and is not an empty directory.
+bash-4.4$ git clone git@github.com:ethantr324/ethan_tran_HW_repo/hw03
+fatal: destination path 'hw03' already exists and is not an empty directory.
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ cd /mnt/scratch//[KCS131_jelenag/students/ethant/hw-3[K[K03
+bash-4.4$ ls
+amazon_reviews_10k_random.tsv  counts.txt  hist_categories.txt	hist_star_rating.txt  hw03_session.txt	README.md  top_customere.txt  top_products.txt
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ history > hw03-[K_history.txt
+bash-4.4$ 
+bash-4.4$ ls
+amazon_reviews_10k_random.tsv  counts.txt  hist_categories.txt	hist_star_rating.txt  hw03_history.txt	hw03_session.txt  README.md  top_customere.txt	top_products.txt
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ his[K[K[Kcat hw03_history.txt [K | head
+    1  pwd
+    2  cd /student
+    3  cd /mnt/scratch/
+    4  cd students/ethant
+    5  cd ..
+    6  pwd
+    7  cd..
+    8  cd ..
+    9  pwd
+   10  cd /mnt/scratch//CS131_jelenag/students/ethant/
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ cat hw03_history.txt | head[C[C[C[C[C[C[C[C[C[Cls[Khistory > hw03_history.txt[C[C[C[C[C[C[C[C[C[Cls[Kcd /mnt/scratch/CS131_jelenag/students/ethant/hw03[C[C[C[C[C[C[C[C[C[Cgit clone git@github.com:ethantr324/ethan_tran_HW_repo/hw03[K2
+Cloning into 'hw02'...
+The authenticity of host 'github.com (140.82.112.3)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,140.82.112.3' (ECDSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+bash-4.4$ git clone git@github.com:ethantr324/ethan_tran_HW_repo/hw02[C[C[C[C[C[C[C[C[C[C[32Pcat hw03_history.txt | head[C[C[C[C[C[C[C[C[C[Cgit clone git@github.com:ethantr324/ethan_tran_HW_repo/hw02[K3
+Cloning into 'hw03'...
+Warning: Permanently added the ECDSA host key for IP address '140.82.112.4' to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+bash-4.4$ git clone git@github.com:ethantr324/ethan_tran_HW_repo/hw03[K[K[K[K
+Cloning into 'ethan_tran_HW_repo'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+bash-4.4$ git clone git@github.com:ethantr324/ethan_tran_HW_repo/[K.git
+Cloning into 'ethan_tran_HW_repo'...
+Warning: Permanently added the ECDSA host key for IP address '140.82.114.3' to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+bash-4.4$ sssh[K[Kh -vt[KT git@githun[Kb.com
+OpenSSH_8.0p1, OpenSSL 1.1.1k  FIPS 25 Mar 2021
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug1: configuration requests final Match pass
+debug1: re-parsing configuration
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug1: Connecting to github.com [140.82.114.3] port 22.
+debug1: Connection established.
+debug1: identity file /mnt/scratch/CS131_jelenag/students/ethant/.ssh/id_rsa type -1
+debug1: identity file /mnt/scratch/CS131_jelenag/students/ethant/.ssh/id_rsa-cert type -1
+debug1: identity file /mnt/scratch/CS131_jelenag/students/ethant/.ssh/id_dsa type -1
+debug1: identity file /mnt/scratch/CS131_jelenag/students/ethant/.ssh/id_dsa-cert type -1
+debug1: identity file /mnt/scratch/CS131_jelenag/students/ethant/.ssh/id_ecdsa type -1
+debug1: identity file /mnt/scratch/CS131_jelenag/students/ethant/.ssh/id_ecdsa-cert type -1
+debug1: identity file /mnt/scratch/CS131_jelenag/students/ethant/.ssh/id_ed25519 type -1
+debug1: identity file /mnt/scratch/CS131_jelenag/students/ethant/.ssh/id_ed25519-cert type -1
+debug1: identity file /mnt/scratch/CS131_jelenag/students/ethant/.ssh/id_xmss type -1
+debug1: identity file /mnt/scratch/CS131_jelenag/students/ethant/.ssh/id_xmss-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_8.0
+debug1: Remote protocol version 2.0, remote software version 7b965dd
+debug1: no match: 7b965dd
+debug1: Authenticating to github.com:22 as 'git'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: ecdsa-sha2-nistp256
+debug1: kex: server->client cipher: aes256-gcm@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: aes256-gcm@openssh.com MAC: <implicit> compression: none
+debug1: kex: curve25519-sha256 need=32 dh_need=32
+debug1: kex: curve25519-sha256 need=32 dh_need=32
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ecdsa-sha2-nistp256 SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM
+debug1: Host 'github.com' is known and matches the ECDSA host key.
+debug1: Found key in /mnt/scratch/CS131_jelenag/students/ethant/.ssh/known_hosts:2
+debug1: rekey out after 4294967296 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 4294967296 blocks
+debug1: Will attempt key: /mnt/scratch/CS131_jelenag/students/ethant/.ssh/id_rsa 
+debug1: Will attempt key: /mnt/scratch/CS131_jelenag/students/ethant/.ssh/id_dsa 
+debug1: Will attempt key: /mnt/scratch/CS131_jelenag/students/ethant/.ssh/id_ecdsa 

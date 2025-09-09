@@ -1,0 +1,241 @@
+    1  pwd
+    2  cd /student
+    3  cd /mnt/scratch/
+    4  cd students/ethant
+    5  cd ..
+    6  pwd
+    7  cd..
+    8  cd ..
+    9  pwd
+   10  cd /mnt/scratch//CS131_jelenag/students/ethant/
+   11  ls
+   12  cd /mnt/scratch/CS131_jelenag/students/ethant/amazon_
+   13  ls amazon_reviews_multilingual_US_v1_00.tsv.zip
+   14  cd /mnt/scratch/CS131_jelenag/students/ethant/amazon_reviews_multilingual_US_v1_00.tsv.zip
+   15  cd /mnt/scratch/CS131_jelenag/amazon_multilingual_US_v1_00.tsv.zip
+   16  ls
+   17  cd /mnt/scratch/CS131_jelenag/
+   18  ls
+   19  ls amazon_reviews_multilingual_US_v1_00.tsv.zip
+   20  unzip -p amazon_reviews_multilingual_US_v1_00.tsv.zip 
+   21  ls
+   22  cd /mnt/scratch/CS131_jelenag/
+   23  ls
+   24  ls amazon_reviews_multilingual_US_v1_00.tsv.zip
+   25  unzip -p amazon_reviews_multilingual_US_v1_00.tsv.zip | tail -5
+   26  unzip -p amazon_reviews_multilingual_US_v1_00.tsv.zip | wc -1
+   27  unzip -p amazon_reviews_multilingual_US_v1_00.tsv.zip | wc - 1
+   28  systemct1 enable --now cockpit.socket
+   29  enable
+   30  enable --now
+   31  change password
+   32  pwd
+   33  passwd
+   34  ethant_h2.log
+   35  script ethant_h2.log
+   36  history
+   37  unzip -p amazon_reviews_multilingual_US_v1_00.tsv.zip | wc -l
+   38  cd /mnt/scratch/CS131_jelenag/
+   39  ls
+   40  ls amazon_reviews_multilingual_US_v1_00.tsv.zip
+   41  unzip -p amazon_reviews_multilingual_US_v1_00.tsv.zip | wc -l
+   42  unzip -p amazon_reviews_multilingual_US_v1_00.tsv.zip | head -50 > ~/amazon_reviews_5
+   43  ~
+   44  ls
+   45  ls ~
+   46  grep "greatest" amazon_reviews_multilingual_US_v1_00_10K.tsv | wc -l
+   47  grep "greatest" amazon_reviews_multilingual_US_v1_00_10K.tsv |less
+   48  less
+   49  grep "greatest" amazon_reviews_multilingual_US_v1_00_10K.tsv |less
+   50  grep -ic "greatest" amazon_reviews_multilingual_US_v1_00_10K.tsv
+   51  grep -vi "return" amazon_reviews_multilingual_US_v1_00_10K.tsv |less
+   52  ls
+   53  cd ~
+   54  ls
+   55  vi amazon_reviews_50.tsv
+   56  ls
+   57  pwd
+   58  ls
+   59  mkdir homework_assignments
+   60  ls
+   61  cd homework_assignments/
+   62  script ethant_h2.log
+   63  mv ethant_h2.log homework_assignments/hw2
+   64  ls
+   65  cd homework_assignments/
+   66  ls
+   67  cd hw2
+   68  cd /hw2
+   69  ls
+   70  cd homework_assignments/hw2
+   71  cd users
+   72  cd /mnt/
+   73  ls
+   74  cd /mnt/scratch/je
+   75  cd /mnt/scratch/
+   76  ls
+   77  cd /mnt/scratch/CS131_jelenag/
+   78  ls
+   79  cd /mnt/scratch/CS131_jelenag/students/ethant/
+   80  ls
+   81  cd /mnt/scratch/CS131_jelenag/students/ethant/homework_assignments/
+   82  ls
+   83  cd /mnt/scratch/CS131_jelenag/students/ethant/homework_assignments/hw
+   84  cd /mnt/scratch/CS131_jelenag/students/ethant/homework_assignments/hw2
+   85  mv ethant_h2.log homework_assignments/hw2
+   86  ls
+   87  cd /mnt/scratch/CS131_jelenag/students/ethant/
+   88  ls
+   89  find . -name 
+   90  find . -name "ethant_h2.log
+   91  find . -name "ethant_h2.log"
+   92  ls
+   93  pwd
+   94  mkdir homework_assignments
+   95  rmdir homework_assignments
+   96  rmdir hw2
+   97  mv ethant_h2.log homework_assignments/hw2
+   98  ls
+   99  cd homework_assignments/hw2 
+  100  cd homework_assignments/hw2
+  101  script ethant_h2.log
+  102  scp -r jelenag@172.20.25.9:/mnt/scratch/CS131_jelenag/students/jelenag/homework_assignments/hw2 ./
+  103  scp -r ethant@172.20.25.9:/mnt/scratch/CS131_jelenag/students/ethant/homework_assignments/hw2./
+  104  scp -r ethant@172.20.25.9:/mnt/scratch/CS131_jelenag/students/ethant/homework_assignments/hw2 ./
+  105  hw2
+  106  scp -r ethant@172.20.25.9:/mnt/scratch/CS131_jelenag/students/ethant/homework_assignments/hw2 ./
+  107  cd
+  108  ls
+  109  cd homework_assignments/hw2 
+  110  cd homework_assignments/hw2
+  111  cd hw2
+  112  ls
+  113  cd homework_assignments/
+  114  ls
+  115  cd /mnt/scratch/CS131_jelenag/students/ethant/
+  116  ls
+  117  vi hw2
+  118  scp -r ethant@172.20.25.9:/mnt/scratch/CS131_jelenag/students/ethant/hw2 ./
+  119  pwd
+  120  scp -r ethant@172.20.25.9:/mnt/scratch/CS131_jelenag/students/ethant/hw2 ~/Downloads/
+  121  scp -r ethant@172.20.25.9:/mnt/scratch/CS131_jelenag/students/ethant/hw2 Downloads/
+  122  scp -r ethant@172.20.25.9:/mnt/scratch/CS131_jelenag/students/ethant/hw2 ~/Downloads/
+  123  scp -r ethant@172.20.25.9:/mnt/scratch/CS131_jelenag/students/ethant/hw2 users/ethan/Downloads
+  124  pwd
+  125  scp -r ethant@172.20.25.9:/mnt/scratch/CS131_jelenag/students/ethant/homework_assignments/hw2 ./
+  126  pwd
+  127  scp -r ethant@172.20.25.9:/mnt/scratch/CS131_jelenag/students/ethant/homework_assignments/hw2 ./
+  128  ls -a ~/Downloads/
+  129  ls
+  130  ls -a ~/homework_assignments/
+  131  ls -a hw2
+  132  ls
+  133  scp ethant@172.20.25.9:/mnt/scratch/CS131_jelenag/students/ethant/homework_assignments/hw2 
+  134  scp ethant@172.20.25.9:/mnt/scratch/CS131_jelenag/students/ethant/homework_assignments/hw2 ~/Downloads/
+  135  scp ethant@172.20.25.9:/mnt/scratch/CS131_jelenag/students/ethant/homework_assignments/hw2 /users/ethan/Downloads
+  136  scp ethant@172.20.25.9:/mnt/scratch/CS131_jelenag/students/ethant/homework_assignments/hw2 /Users/ethan/Downloads
+  137  scp ethant@172.20.25.9:/mnt/scratch/CS131_jelenag/students/ethant/homework_assignments/hw2 Macintosh HD/Users/ethan/Downloads
+  138  vi run_test.sh
+  139  bash run_test.sh
+  140  bash -x run_test.sh
+  141  ls
+  142  cd .
+  143  cd ...
+  144  cd ..
+  145  ls
+  146  cd .
+  147  ls
+  148  cd .
+  149  ls
+  150  cd .. ls
+  151  cd ..
+  152  ls
+  153  ls ..
+  154  cd ..
+  155  ls
+  156  cd scratch/
+  157  ls
+  158  cd CS131_jelenag/
+  159  ls
+  160  script hw03_session.txt
+  161  mkdir -p /mnt/scratch/CS131_jelenag/students/ethant/hw03
+  162  ls
+  163  pwd
+  164  cd hw03
+  165  ls
+  166  pwd
+  167  cd ..
+  168  rmdir hw03_session.txt
+  169   
+  170  pwd
+  171  ls
+  172  rmdir hw03_session.txt 
+  173  rm hw03_session.txt 
+  174  ls
+  175  cd hw03/
+  176  script hw03_session.txt
+  177  ls ..
+  178   /mnt/scratch/CS131_jelenag/ama
+  179  unzip -p amazon_reviews_multilngual_US_v1_00.tsv.zip | head -10000 > amazon_reviews_10k_random.tsv
+  180  ls
+  181  pwd
+  182  wc -1 amazon_reviews_10k_random.tsv 
+  183  wc amazon_reviews_10k_random.tsv 
+  184  vi amazon_reviews_10k_random.tsv 
+  185  cd /mnt/scratch/CS131_jelenag/
+  186  unzip -p amazon_reviews_multilingual_US_v1_00.tsv.zip | head -5
+  187  unzip -p amazon_reviews_multilngual_US_v1_00.tsv.zip | head -10000 > amazon_reviews_10k_random.tsv
+  188  ls
+  189  pwd
+  190  wc -1 amazon_reviews_10k_random.tsv 
+  191  wc amazon_reviews_10k_random.tsv 
+  192  pwd
+  193  unzip amazon_reviews_multilingual_US_v1_00.tsv.zip
+  194  cd /mnt/scratch/CS131_jelenag/students/ethant/hw03
+  195  ls
+  196  head -n 1 (amazon_reviews_10k_random.tsv && tail -n +2 amazon_reviews_10k_random.tsv | shuf -n 10000) \ > /mnt/scratch/CS131_jelenag/students/ethant/hw03/amazon_reviews_10k_random.tsv 
+  197  (head -n 1 amazon_reviews_10k_random.tsv && tail -n +2 amazon_reviews_10k_random.tsv | shuf -n 10000) \ > /mnt/scratch/CS131_jelenag/students/ethant/hw03/amazon_reviews_10k_random.tsv 
+  198  (head -n 1 amazon_reviews_10k_random.tsv && tail -n +2 amazon_reviews_10k_random.tsv | shuf -n 10000)  > /mnt/scratch/CS131_jelenag/students/ethant/hw03/amazon_reviews_10k_random.tsv 
+  199  pwd
+  200  wc -1 amazon_reviews_10k_random.tsv 
+  201  wc --help
+  202  -w amazon_reviews_10k_random.tsv 
+  203  wc -w amazon_reviews_10k_random.tsv 
+  204  pwd
+  205  cd /mnt/scratch/CS131_jelenag/
+  206  ls
+  207  (head -n 1 amazon_reviews_multilingual_US_v1_00.tsv && tail -n +2 amazon_reviews_multilingual_US_v1_00.tsv | shuf -n 10000) > /mnt/scratch/CS131_jelenag/students/ethant/hw03/amazon_reviews_10k_random.tsv
+  208  pwd
+  209  cd /mnt/scratch/CS131_jelenag/students/ethant/hw03
+  210  ls
+  211  wc -l amazon_reviews_10k_random.tsv 
+  212  tail -n +2 amazon_reviews_10k_random.tsv  | wc -l
+  213  { echo "The first line is the header" ;  echo -n "Total lies (including header): "; wc -l < amazon_reviews_10k_random.tsv ; echo -n "Total data lines (excluding header): "; tail -n +2 amazon_reviews_10k_random.tsv | wc -l; } > counts.txt
+  214  ls
+  215  cat counts.txt 
+  216  tail -n +2 amazon_reviews_10k_random.tsv  \ | cut -f8 \ | sort \ | uniq -c \ | sort -nr \ > hist_star_rating.txt
+  217  tail -n +2 amazon_reviews_10k_random.tsv  | cut -f8 | sort  | uniq -c  | sort -nr  > hist_star_rating.txt
+  218  cat hist_star_rating.txt 
+  219  pwd
+  220  ls
+  221  tail -n +2 amazon_reviews_10k_random.tsv | cut -f2 | sort } uniq -c | sort -nr | head -10 > top_customere.txt
+  222  tail -n +2 amazon_reviews_10k_random.tsv | cut -f2 | sort | uniq -c | sort -nr | head -10 > top_customere.txt
+  223  cat top_customere.txt 
+  224  tail -n +2 amazon_reviews_10k_random.tsv | sort | uniq -c | sort -nr } head -10 | awk > top_products.txt
+  225  tail -n +2 amazon_reviews_10k_random.tsv | sort | uniq -c | sort -nr | head -10 | awk > top_products.txt
+  226  cat top_products.txt 
+  227  tail -n +2 amazon_reviews_10k_random.tsv | awk -F'\t' '{print$4 "\t" $6}' | sort | uniq -c | sort -nr | head -10 | awk '{count=$1; $1=""; print count "\t" $0}' > top_products.txt
+  228  cat top_products.txt 
+  229  ls
+  230  tail -n +2 amazon_reviews_10k_random.tsv | cut -f7 | sort |uniq -c | sort nr > hist_categories.txt
+  231  tail -n +2 amazon_reviews_10k_random.tsv | cut -f7 | sort | uniq -c | sort nr > hist_categories.txt
+  232  tail -n +2 amazon_reviews_10k_random.tsv | cut -f7 | sort | uniq -c | sort -nr > hist_categories.txt
+  233  cat hist_categories.txt 
+  234  vi README.md
+  235  vi -R README.md 
+  236  ls
+  237  cd ~
+  238  git clone git@github.com:ethantr324/ethan_tran_HW_repo/hw03
+  239  cd /mnt/scratch/CS131_jelenag/students/ethant/hw03
+  240  ls
+  241  history > hw03_history.txt

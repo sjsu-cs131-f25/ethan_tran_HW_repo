@@ -1,0 +1,1 @@
+I mainly used cut, sort, uniq, head, and sometimes awk. I used cut to cut the right column out of the .tsv file. I used sort to group the identical ID's together, and sort -nr to sort the count from largest to smallest. I used head to keep x amount of customers. I used uniq to count how many times a unique item appeared. I used awk to extract product id's and produc titles.
